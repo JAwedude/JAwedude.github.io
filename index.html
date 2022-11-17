@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>Assignment 2</title>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+	<h1>Simple Text-Based RPG App!</h1>
+	<nav>
+		<ul>
+			<li id = "signup-view-button"><a>Sign Up</a></li>
+			<li id = "login-view-button" class = "active"><a>Log In</a></li>
+			<li id = "logout-button" class = "active"><a>Log Out</a></li>
+		</ul>
+	</nav>
+	<div id = "serverdown-view">
+		<p>Error: Server Offline</p>
+	</div>
+	<div id = "signup-view">
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname" value=""><br>
+		<label for="lname">Last name:</label>
+		<input type="text" id="lname" name="lname" value=""><br>
+		<label for="email">Email:</label>
+		<input type="text" id="signup-email" name="email" value=""><br>
+		<label for="password">Password:</label>
+		<input type="password" id="signup-password" name="password" value=""><br>
+		<button id = "signup-button">Sign Up</button>
+		<p id = "signup-status"></p>
+	</div>
+	<div id = "login-view">
+		<label for="email">Email:</label>
+		<input type="text" id="login-email" name="email" value=""><br>
+		<label for="password">Password:</label>
+		<input type="password" id="login-password" name="password" value=""><br>
+		<button id = "login-button">Log In</button>
+		<p id = "login-status"></p>
+	</div>
+	<div id = "app-view">
+		<p class = "nopad">NOTE: Saved scenario's cannot be edited!</p>
+		<input id = "scenario-name-input" placeholder = "Input Scenario Name">
+		<input id = "scenario-prompt-input" placeholder = "Input Scenario Prompt">
+		<button id = "scenario-add-button">Add Scenario</button>
+		<div id = "scenario-holder"></div>
+	</div>
+	<script src = "script.js"></script>
+</body>
