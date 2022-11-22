@@ -270,7 +270,7 @@ function UpdateUI() {
 			scenarioContainer.appendChild(ActionContainer);
 			
 			// Action [name, response] edit
-			new DynamicEditSystem(`scenario${scenarioID}-action${action_id}`, ActionContainer, ["name", "response", "nextentry_id"], Action, PutAction);
+			new DynamicEditSystem(`scenario${scenarioID}-action${action_id}`, ActionContainer, ["name", "response", "next_entry_id"], Action, PutAction);
 			
 			// requirement header
 			const reqsH = document.createElement("h4");
